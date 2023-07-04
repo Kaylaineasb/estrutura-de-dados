@@ -24,7 +24,7 @@ public class filaSequencial {
         if (cheia()){
             System.out.println("A fila está cheia");
         }else{
-            traseira = (traseira+1)%capacidade;
+            traseira = (traseira+1)%capacidade;//circular
             lista[traseira]= elemento;
             tamanho++;
         }
